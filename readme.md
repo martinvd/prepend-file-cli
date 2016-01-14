@@ -4,6 +4,12 @@
 
 CLI version of [node-prepend-file](https://github.com/hemanth/node-prepend-file).
 
+## Install
+
+```
+npm install -g prepend-file-cli
+```
+
 ## License
 
 MIT © [Martin van Driel](https://github.com/martinvd)
