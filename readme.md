@@ -7,8 +7,19 @@ CLI version of [node-prepend-file](https://github.com/hemanth/node-prepend-file)
 ## Install
 
 ```
-npm install -g prepend-file-cli
+$ npm install -g prepend-file-cli
 ```
+
+## Usage
+
+```
+Usage
+  $ prepend [file] [content]
+
+Example
+  $ prepend testfile.txt AppendThis
+  $ prepend testfile.txt "Append more"
+```    
 
 ## License
 
