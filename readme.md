@@ -15,8 +15,8 @@ Usage
   $ prepend [file] [content]
 
 Example
-  $ prepend testfile.txt AppendThis
-  $ prepend testfile.txt "Append more"
+  $ prepend testfile.txt PrependThis
+  $ prepend testfile.txt "Prepend more"
 ```    
 
 ## Related
