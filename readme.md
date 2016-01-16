@@ -2,8 +2,6 @@
 
 > Prepend data to a file, creating the file if it not yet exists.
 
-CLI version of [node-prepend-file](https://github.com/hemanth/node-prepend-file).
-
 ## Install
 
 ```
@@ -20,6 +18,10 @@ Example
   $ prepend testfile.txt AppendThis
   $ prepend testfile.txt "Append more"
 ```    
+
+## Related
+
+* [node-prepend-file](https://github.com/hemanth/node-prepend-file)
 
 ## License
 
