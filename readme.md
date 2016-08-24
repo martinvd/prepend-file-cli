@@ -1,4 +1,4 @@
-# prepend-file-cli
+# prepend-file-cli [![Build status](https://travis-ci.org/martinvd/prepend-file-cli.svg?branch=master)](https://travis-ci.org/martinvd/download-ccleaner)
 
 > Prepend data to a file, creating the file if it not yet exists.
 
