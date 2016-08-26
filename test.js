@@ -11,7 +11,7 @@ describe('Prepend to file', () => {
 	after(cb => fs.unlink(testfile, cb));
 
 	it('Should create an empty file and have content added', cb => {
-		execa('./cli.js', [testfile, 'Hello']).then(() => {
+		execa('node', ['cli.js', testfile, 'Hello']).then(() => {
 			let fileData = fs.readFileSync(testfile).toString();
 			assert.strictEqual(fileData, 'Hello');
 			cb();
@@ -19,7 +19,7 @@ describe('Prepend to file', () => {
 	});
 
 	it('Should prepend data to a non empty file', cb => {
-		execa('./cli.js', [testfile, 'What']).then(() => {
+		execa('node', ['cli.js', testfile, 'What']).then(() => {
 			let fileData = fs.readFileSync(testfile).toString();
 			assert.strictEqual(fileData, 'WhatHello');
 			cb();
@@ -28,7 +28,7 @@ describe('Prepend to file', () => {
 
 	it('Should accepts buffers', cb => {
 		let buf = new Buffer('abc', 'utf8');
-		execa('./cli.js', [testfile, buf]).then(() => {
+		execa('node', ['cli.js', testfile, buf]).then(() => {
 			let fileData = fs.readFileSync(testfile).toString();
 			assert.strictEqual(fileData, 'abcWhatHello');
 			cb();
@@ -37,7 +37,7 @@ describe('Prepend to file', () => {
 
 	it('Should accepts numbers', cb => {
 		let number = 220;
-		execa('./cli.js', [testfile, number]).then(() => {
+		execa('node', ['cli.js', testfile, number]).then(() => {
 			let fileData = fs.readFileSync(testfile).toString();
 			assert.strictEqual(fileData, '220abcWhatHello');
 			cb();
