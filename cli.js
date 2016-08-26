@@ -7,7 +7,7 @@ const argv = require('minimist')(process.argv.slice(2));
 const filename = argv._[0] || '';
 const data = argv._[1] || '';
 
-prependFile(filename, data, (err) => {
+prependFile(filename, data, err => {
 	if (err) {
 		if (err.message) {
 			console.error(err.message);
