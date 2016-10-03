@@ -1,7 +1,7 @@
 {
   "name": "prepend-file-cli",
   "version": "1.0.4",
-  "description": "",
+  "description": "Prepend data to a file.",
   "license": "MIT",
   "repository": "martinvd/prepend-file-cli",
   "author": {
