@@ -28,9 +28,9 @@
     "prepend"
   ],
   "devDependencies": {
-    "execa": "^0.4.0",
-    "mocha": "^3.0.2",
-    "xo": "^0.16.0"
+    "execa": "^0.5.0",
+    "mocha": "^3.2.0",
+    "xo": "^0.17.1"
   },
   "dependencies": {
     "minimist": "^1.2.0",
